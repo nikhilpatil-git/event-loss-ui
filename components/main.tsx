@@ -34,7 +34,7 @@ export const Main = () => {
     if(IsRequestValid(state)){
       dispatch({type:"IsLoading", result: true});
       await axios.post(
-        'https://event-loss.herokuapp.com/calculateLoss',
+        'https://cors-anywhere.herokuapp.com/'+'https://event-loss.herokuapp.com/calculateLoss',
         {"peril": state.peril,
         "region": state.region,
         "loss": state.loss
