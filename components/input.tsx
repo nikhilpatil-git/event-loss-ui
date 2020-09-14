@@ -1,7 +1,7 @@
 import { FormControl, FormLabel, Input, FormHelperText } from "@chakra-ui/core";
 import { useState, FC, useEffect, useContext } from "react";
 import { EventAction } from "../reducer/action_state";
-import { EventReducerContext } from "..";
+import { EventReducerContext } from "../pages";
 
 export const CustomInput = () => {
   const [value, setValue] = useState(0);  

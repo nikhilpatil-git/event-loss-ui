@@ -4,7 +4,7 @@ import { Main } from "./main";
 import LoadingOverlay from "react-loading-overlay";
 import { EventState } from "../reducer/action_state";
 import { useContext } from "react";
-import { EventStateContext } from "..";
+import { EventStateContext } from "../pages";
 
 export const Layout = () => {
   const state: EventState = useContext(EventStateContext);

@@ -1,17 +1,12 @@
 import {
   Menu,
   MenuButton,
-  IconButton,
   Button,
   MenuList,
   MenuItem,
-  Grid,
-  Text,
   Icon,
 } from "@chakra-ui/core";
-import { BsCaretDownFill } from "react-icons/bs";
-import { useState, useEffect } from "react";
-import { CORS_PROXY } from "../util";
+import { useState } from "react";
 
 interface IProps {
   title: string;

@@ -8,10 +8,11 @@ import { CustomInput } from "./input";
 import { Peril } from "./peril";
 import { Region } from "./region";
 import { EventState, EventAction } from "../reducer/action_state";
-import { EventStateContext, EventReducerContext } from "..";
 import { useContext, useEffect } from "react";
+import { EventStateContext, EventReducerContext } from "../pages";
 import { ResponseModal } from "./response_modal";
 import { IsRequestValid } from "../util";
+
 export const Main = () => {
   const state: EventState = useContext(EventStateContext);
   const dispatch: React.Dispatch<EventAction> = useContext(EventReducerContext);

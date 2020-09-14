@@ -1,8 +1,8 @@
 import { EventMenu } from "./event_menu";
 import { useEffect, useState, useContext } from "react";
-import { CORS_PROXY } from "../util";
 import { EventAction } from "../reducer/action_state";
-import { EventReducerContext } from "..";
+import { EventReducerContext } from "../pages";
+
 
 export const Peril = () => {
 
@@ -10,7 +10,7 @@ export const Peril = () => {
     const dispatch: React.Dispatch<EventAction> = useContext(EventReducerContext);
 
     useEffect(() => {
-        fetch('http://localhost:8080/perils')
+        fetch('https://event-loss.herokuapp.com/perils')
         .then(res => res.json())
         .then(
           (result) => {

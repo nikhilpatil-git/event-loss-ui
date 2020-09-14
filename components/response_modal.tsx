@@ -13,7 +13,7 @@ import {
 } from "@chakra-ui/core";
 import { EventState, EventAction } from "../reducer/action_state";
 import { useContext, useState } from "react";
-import { EventStateContext, EventReducerContext } from "..";
+import { EventStateContext, EventReducerContext } from "../pages";
 
 export const ResponseModal = () => {
   const state: EventState = useContext(EventStateContext);

@@ -1,11 +1,10 @@
 import { Heading, Box, Grid } from "@chakra-ui/core";
 import { SimpleGrid } from "@chakra-ui/core";
-import { Main } from "./components/main";
-import { Header } from "./components/header";
-import { InitialEventState, EventAction, EventState } from "./reducer/action_state";
 import { Context, createContext, useReducer, Reducer } from "react";
-import { EventReducer } from './reducer/event_reducer';
-import { Layout } from "./components/layout";
+import { EventState, InitialEventState, EventAction } from "../reducer/action_state";
+import { EventReducer } from "../reducer/event_reducer";
+import { Layout } from "../components/layout";
+
 
 export const EventStateContext: Context<EventState> = createContext(
   InitialEventState
